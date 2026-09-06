@@ -161,6 +161,18 @@
         </td>
       </tr>
       <tr>
+        <td><strong>A notification address</strong> — only if you allow notifications</td>
+        <td>
+          If you allow notifications, your device gives altr a push token — an address
+          for this app on this phone, which the operating system issues and changes from
+          time to time. We store it against your account so we can tell you about a
+          message, a comment on your post, a friend request, or a decision on an appeal.
+          It is passed to Expo, which delivers the notification, and goes nowhere else.
+          It is deleted when you sign out, when you delete your account, and when your
+          device tells us it has stopped working.
+        </td>
+      </tr>
+      <tr>
         <td><strong>Reports and blocks</strong></td>
         <td>
           If you report content or block someone, we record who reported or blocked whom
@@ -226,6 +238,14 @@
       <tr>
         <td><strong>Convex</strong></td>
         <td>Hosts the database and the backend. All account data, posts and messages are stored there.</td>
+      </tr>
+      <tr>
+        <td><strong>Expo</strong></td>
+        <td>
+          Delivers push notifications. It receives your device's notification address and
+          the text of the notification itself — a name and a short line, never a photo,
+          a location or anything else. Only if you have allowed notifications.
+        </td>
       </tr>
       <tr>
         <td><strong>Cloudinary</strong></td>
