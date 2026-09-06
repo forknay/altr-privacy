@@ -173,6 +173,21 @@
         </td>
       </tr>
       <tr>
+        <td><strong>A check that the app is genuine</strong></td>
+        <td>
+          When you create an account, altr asks Apple to confirm that this is a real
+          copy of the app on a real device, so that accounts cannot be created in bulk
+          by software pretending to be altr. We store an identifier for a security key
+          your device generates, together with a counter that stops the same proof being
+          reused. <strong>The key itself never leaves your device</strong> — Apple's
+          hardware does not let it out, and we never see it. What we store is not linked
+          to your account, is not shared with anyone, and cannot be used to identify you
+          or to see anything you do in the app. It is kept for as long as the app is
+          installed on that device, because deleting it would stop that device from being
+          able to create an account again.
+        </td>
+      </tr>
+      <tr>
         <td><strong>Reports and blocks</strong></td>
         <td>
           If you report content or block someone, we record who reported or blocked whom
@@ -294,6 +309,15 @@
   <p>
     Content hidden by a moderator is deleted 90 days after it was hidden, which is also the
     window in which an appeal can put it back.
+  </p>
+
+  <p>
+    <strong>The device check described above is kept indefinitely</strong>, and that is
+    deliberate rather than an oversight. It is what a device proves itself with, so
+    deleting it would leave that device unable to create an account on altr again. It is
+    not attached to your account, so deleting your account does not remove it — and it
+    tells us nothing about you beyond the fact that some genuine copy of altr once ran on
+    some device.
   </p>
 
   <h2>Deleting your account</h2>
